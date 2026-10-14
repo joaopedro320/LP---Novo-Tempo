@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mensagem enviada | Tempo Novo Marmoraria</title>
+<meta name="robots" content="noindex, follow">
+<meta name="theme-color" content="#0E1C33">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/style.css">
+<style>
+.pg{min-height:100vh;display:grid;place-items:center;padding:40px 20px}
+.pg__box{max-width:560px;background:#fff;padding:48px 40px;clip-path:polygon(0 0,calc(100% - 40px) 0,100% 40px,100% 100%,0 100%);display:grid;gap:18px;justify-items:start}
+.pg__box img{height:40px;width:auto;margin-bottom:12px}
+.pg__box p{color:var(--ink-soft);margin:0}
+.pg__grande{font:500 clamp(4rem,10vw,6rem)/1 var(--f-head);color:var(--lapis);letter-spacing:-.04em}
+.pg__acoes{display:flex;flex-wrap:wrap;gap:16px 24px;align-items:center;margin-top:8px}
+@media (max-width:480px){.pg__box{padding:36px 22px}}
+</style>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<main class="pg">
+  <div class="pg__box">
+    <img src="/assets/img/logo-horizontal.webp" alt="Tempo Novo Marmoraria" width="520" height="81">
+    <h1>Recebemos o seu pedido de orçamento</h1>
+    <p>A sua mensagem abriu no WhatsApp em outra aba. Se ela não apareceu, toque no botão abaixo e envie por lá.</p>
+    <p>Respondemos de segunda a quinta, das 8h às 17h30, e na sexta, das 8h às 17h.</p>
+    <div class="pg__acoes">
+      <a class="btn" id="btnWa" href="https://wa.me/5511969233519?text=Ol%C3%A1%2C%20acabei%20de%20preencher%20o%20formul%C3%A1rio%20no%20site.%20Aguardo%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">Abrir o WhatsApp</a>
+      <a class="link-sec" href="/">Voltar ao site</a>
+    </div>
+  </div>
+</main>
+<script>
+window.dataLayer=window.dataLayer||[];window.dataLayer.push({event:'pagina_obrigado'});
+document.getElementById('btnWa').addEventListener('click',function(){window.dataLayer.push({event:'whatsapp_click',local:'obrigado'});});
+</script>
+</body>
+</html>
